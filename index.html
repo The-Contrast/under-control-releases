@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Under Control - Download</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            background: #0a0a0a;
+            color: #fff;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+        .container {
+            text-align: center;
+            max-width: 700px;
+            padding: 2rem;
+        }
+        .logo {
+            width: 96px;
+            height: 96px;
+            margin-bottom: 1.5rem;
+            border-radius: 20px;
+        }
+        h1 {
+            font-size: 2.5rem;
+            font-weight: 700;
+            margin-bottom: 0.5rem;
+            letter-spacing: -0.02em;
+        }
+        .tagline {
+            color: #888;
+            font-size: 1.1rem;
+            margin-bottom: 2.5rem;
+        }
+        .version-badge {
+            display: inline-block;
+            background: #1a1a2e;
+            color: #7c83ff;
+            padding: 0.3rem 0.8rem;
+            border-radius: 20px;
+            font-size: 0.85rem;
+            margin-bottom: 2rem;
+            border: 1px solid #2a2a4e;
+        }
+        .download-buttons {
+            display: flex;
+            gap: 1rem;
+            justify-content: center;
+            flex-wrap: wrap;
+            margin-bottom: 2rem;
+        }
+        .download-btn {
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+            padding: 1rem 2rem;
+            border-radius: 12px;
+            text-decoration: none;
+            font-size: 1rem;
+            font-weight: 600;
+            transition: all 0.2s;
+            min-width: 220px;
+            justify-content: center;
+        }
+        .download-btn.mac {
+            background: #fff;
+            color: #000;
+        }
+        .download-btn.mac:hover {
+            background: #e0e0e0;
+            transform: translateY(-2px);
+        }
+        .download-btn.windows {
+            background: #0078d4;
+            color: #fff;
+        }
+        .download-btn.windows:hover {
+            background: #006abc;
+            transform: translateY(-2px);
+        }
+        .download-btn svg {
+            width: 24px;
+            height: 24px;
+            flex-shrink: 0;
+        }
+        .download-btn .btn-text {
+            text-align: left;
+        }
+        .download-btn .btn-label {
+            font-size: 0.75rem;
+            opacity: 0.7;
+            font-weight: 400;
+        }
+        .download-btn .btn-platform {
+            font-size: 1rem;
+        }
+        .meta {
+            color: #555;
+            font-size: 0.85rem;
+            margin-top: 1rem;
+        }
+        .meta a {
+            color: #7c83ff;
+            text-decoration: none;
+        }
+        .meta a:hover { text-decoration: underline; }
+        .loading { color: #555; }
+        .file-size {
+            font-size: 0.75rem;
+            opacity: 0.6;
+            font-weight: 400;
+        }
+        .download-btn.primary {
+            transform: scale(1.05);
+            box-shadow: 0 4px 20px rgba(255, 255, 255, 0.1);
+        }
+        .download-btn.primary:hover {
+            transform: scale(1.05) translateY(-2px);
+        }
+        .other-platform {
+            color: #666;
+            font-size: 0.85rem;
+            margin-bottom: 2rem;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Under Control</h1>
+        <p class="tagline">Work management & activity tracking for teams</p>
+
+        <div id="version-badge" class="version-badge loading">Loading latest version...</div>
+
+        <div id="download-buttons" class="download-buttons">
+            <a class="download-btn mac" href="#" id="mac-btn" style="display:none">
+                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.8-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"/></svg>
+                <div class="btn-text">
+                    <div class="btn-label">Download for</div>
+                    <div class="btn-platform">macOS <span class="file-size" id="mac-size"></span></div>
+                </div>
+            </a>
+            <a class="download-btn windows" href="#" id="win-btn" style="display:none">
+                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M3 12V6.5l8-1.1V12H3zm0 .5h8v6.6l-8-1.1V12.5zM11.5 5.3l9.5-1.3v8h-9.5V5.3zM11.5 12.5H21v7l-9.5-1.3V12.5z"/></svg>
+                <div class="btn-text">
+                    <div class="btn-label">Download for</div>
+                    <div class="btn-platform">Windows <span class="file-size" id="win-size"></span></div>
+                </div>
+            </a>
+        </div>
+
+        <p class="meta">
+            <span id="release-date"></span>
+            <br><br>
+            <a href="https://github.com/The-Contrast/under-control-releases/releases">All releases</a>
+        </p>
+    </div>
+
+    <script>
+        const REPO = 'The-Contrast/under-control-releases';
+        const PAGES_BASE = 'https://the-contrast.github.io/under-control-releases/downloads';
+
+        function detect_os() {
+            const ua = navigator.userAgent.toLowerCase();
+            if (ua.includes('mac')) return 'mac';
+            if (ua.includes('win')) return 'windows';
+            return 'unknown';
+        }
+
+        function format_size(bytes) {
+            if (bytes < 1024 * 1024) return (bytes / 1024).toFixed(0) + ' KB';
+            return (bytes / (1024 * 1024)).toFixed(1) + ' MB';
+        }
+
+        function reorder_buttons() {
+            const os = detect_os();
+            const container = document.getElementById('download-buttons');
+            const mac_btn = document.getElementById('mac-btn');
+            const win_btn = document.getElementById('win-btn');
+
+            // Put user's OS button first and make it primary
+            if (os === 'windows') {
+                container.insertBefore(win_btn, container.firstChild);
+                win_btn.classList.add('primary');
+            } else {
+                container.insertBefore(mac_btn, container.firstChild);
+                mac_btn.classList.add('primary');
+            }
+        }
+
+        async function load_release() {
+            try {
+                const res = await fetch(`https://api.github.com/repos/${REPO}/releases/latest`);
+                const release = await res.json();
+                const tag = release.tag_name;
+
+                document.getElementById('version-badge').textContent = tag;
+                document.getElementById('version-badge').classList.remove('loading');
+
+                const date = new Date(release.published_at || release.created_at);
+                document.getElementById('release-date').textContent =
+                    `Released ${date.toLocaleDateString('en-US', { month: 'long', day: 'numeric', year: 'numeric' })}`;
+
+                // Find assets
+                for (const asset of release.assets) {
+                    const name = asset.name.toLowerCase();
+                    const pages_url = `${PAGES_BASE}/${tag}/${asset.name}`;
+
+                    if (name.endsWith('.dmg')) {
+                        const btn = document.getElementById('mac-btn');
+                        btn.href = pages_url;
+                        btn.style.display = 'flex';
+                        document.getElementById('mac-size').textContent = `(${format_size(asset.size)})`;
+                    } else if (name.endsWith('.exe')) {
+                        const btn = document.getElementById('win-btn');
+                        btn.href = pages_url;
+                        btn.style.display = 'flex';
+                        document.getElementById('win-size').textContent = `(${format_size(asset.size)})`;
+                    }
+                }
+
+                reorder_buttons();
+            } catch (e) {
+                document.getElementById('version-badge').textContent = 'Could not load release info';
+                document.getElementById('mac-btn').href = `https://github.com/${REPO}/releases/latest`;
+                document.getElementById('mac-btn').style.display = 'flex';
+                document.getElementById('win-btn').href = `https://github.com/${REPO}/releases/latest`;
+                document.getElementById('win-btn').style.display = 'flex';
+                reorder_buttons();
+            }
+        }
+
+        load_release();
+    </script>
+</body>
+</html>
