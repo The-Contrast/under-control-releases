@@ -1,0 +1,11 @@
+{
+  "version": "1.0.71",
+  "notes": "Under Control v1.0.71",
+  "pub_date": "2026-05-15T10:15:20Z",
+  "platforms": {
+    "windows-x86_64": {
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVSTElSSHUxWEE3UGZRUEZXZXZiN0pIcDNtaUxTN2d0THE0bjFTdUR5VzZLNzZtSWdXaGpBQ0tyMjNqZ2pHbXJTUklta3g4WkZqdTBUM0hBallFQk9iV1RLTXhITnhGYkFVPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzc4ODQwMTEyCWZpbGU6VW5kZXIgQ29udHJvbF8xLjAuNzFfeDY0LXNldHVwLmV4ZQp5YzNJMHNkYTk5b0RsTk1vSHZNd3AxeS9aL0FVK2puaWtodWlaVVRmL0l0bUI4K0QyMGR2UHJEdzlyWnZZUkVQcGpSMXBvUHJFd3h6T2dIRHJhV2xBdz09Cg==",
+      "url": "https://the-contrast.github.io/under-control-releases/downloads/v1.0.71/Under_Control_1.0.71_x64-setup.exe"
+    }
+  }
+}
