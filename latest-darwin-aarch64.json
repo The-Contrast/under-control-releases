@@ -1,11 +1,11 @@
 {
-  "version": "1.0.83",
-  "notes": "Under Control v1.0.83",
-  "pub_date": "2026-07-03T09:53:01Z",
+  "version": "1.0.84",
+  "notes": "Under Control v1.0.84",
+  "pub_date": "2026-10-03T14:22:59Z",
   "platforms": {
     "darwin-aarch64": {
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVSTElSSHUxWEE3UGYzei9OR3RPR0JZSE1qTmI3SFRDV0ZaUldvSlZqK3llYmh5cE9JQ0dYSWMvaDVicTJTSjczUnNlbXBSUjE4TDFldndGaEhGV2xRbzdRZnZhTXdRTlFjPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzgzMDcyMzc0CWZpbGU6VW5kZXIgQ29udHJvbC5hcHAudGFyLmd6CkV4Y3hja3lkK1JOc1JBQUhyNGN3a2ZSTlJkUlB3VzlQUm9HU1p2a2tHZko2NlhNWTRJUXZRU1FiYkwzcllXWUhpRGcxcy9PVzlGS0FRSHJ3Sm5XcERnPT0K",
-      "url": "https://the-contrast.github.io/under-control-releases/downloads/v1.0.83/Under_Control.app.tar.gz"
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVSTElSSHUxWEE3UFVoNGhobmY0Ui9iUlJ1K3VMOUtRbWZ2ZVNWT3JFNjVSekYyem8rdUNtek5pSDYyL3FpR2p0Tmo3N0hmNHM4Q0NXUXhLUk0zMGhJRE5rU29PL01oWWdvPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzkxMDM3MzczCWZpbGU6VW5kZXIgQ29udHJvbC5hcHAudGFyLmd6CjB0SU5ITHdXUmhmZkZmc0o3ZEU4WWNlcFVpQ3Nzb0ZhUEprd0pnYVJ5dzhJRTZTMFE3SWJZVHBvNHA0NTlETUVrVGZzNzY0clNVajlzRUlnWnZrSUJBPT0K",
+      "url": "https://the-contrast.github.io/under-control-releases/downloads/v1.0.84/Under_Control.app.tar.gz"
     }
   }
 }
