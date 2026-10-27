@@ -1,11 +1,11 @@
 {
   "version": "1.0.95",
   "notes": "Under Control v1.0.95",
-  "pub_date": "2026-10-26T14:06:58Z",
+  "pub_date": "2026-10-27T03:53:35Z",
   "platforms": {
     "windows-x86_64": {
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVSTElSSHUxWEE3UGFqemluSzBNalNlRVJJcmlnM2lyRHdobi8yTG9Kbm4yT3FOM0pGU2RYUHdsQ1Vnemt3SEQ4bFM2UFVoelErWDdHRWxLMFNsdVd2MGxLRDVrc09xUFFjPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzkzMDIzNjA4CWZpbGU6VW5kZXIgQ29udHJvbF8xLjAuOTRfeDY0LXNldHVwLmV4ZQpvWm9zSWhzYkwzZUNIOC8zZUkrVDNybDBNNlFUc2R0OUgrMllUR2dkOER1MHE5aXkzV1VtemNTekl3d0ZIaFF0Z2N6MWhxRElGSDMrOXhvWTlURHVDdz09Cg==",
-      "url": "https://the-contrast.github.io/under-control-releases/downloads/v1.0.95/Under_Control_1.0.94_x64-setup.exe"
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVSTElSSHUxWEE3UFNQU3ZtclpXR0NxZW5QN2JINGZyUitQenRvK2RtbXdUQlFQZjJrdExIZnNSb3habGFXN3NLcmE0TFN4SFl6Ykd6VGFtcFMyTEtzZnNRVzJ2WHVkQlFBPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzkzMDczMjA4CWZpbGU6VW5kZXIgQ29udHJvbF8xLjAuOTVfeDY0LXNldHVwLmV4ZQpOektVOE1qb09TUVgvVEtKZ3o0TnRLOUJaRnY5ZGlKL0JNOGpRRzc2U2k2QXM2NlNiQzcxQlBOU1ZlOTRTR1pBa1RaVlUvaUpIb2htYm1sNTlNQi9DUT09Cg==",
+      "url": "https://the-contrast.github.io/under-control-releases/downloads/v1.0.95/Under_Control_1.0.95_x64-setup.exe"
     }
   }
 }
